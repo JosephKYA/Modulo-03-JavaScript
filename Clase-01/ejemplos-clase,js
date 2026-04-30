@@ -1,0 +1,43 @@
+
+//Ejemplos de Clase 01
+
+//Numericos
+let puntuacion = 56
+puntuacion = 60
+
+//String
+const pais = 'Mexico'
+
+//Boolean
+let activo = true
+let desactivado = false
+
+//undefined
+let x 
+
+//Objetos
+let persona = {
+    nombre: 'Ailyn',
+    edad: 20,
+    activo: true,
+    materias: ['español', 'ingles', 'aleman'],
+    direccion: { 
+        calle: 'Siempre viva', 
+        numero: 20, 
+        ciudad: 'Springfield'
+    }
+}
+
+let frutas = [ ['manzana', 'cereza', 'fresa'], ['mango', 'platano', 'guayaba']]
+
+function saludar(){
+    console.log('Hola Mundo!'); 
+    console.log(frutas);
+    
+    let edad = 20
+    console.log(edad);
+    
+}
+
+console.log(edad);
+saludar()
