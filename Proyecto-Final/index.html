@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Seguimiento de Libros</h1>
+        <p class="descripcion">Escribe un comentario o reseña sobre un libro y agrégalo a la página.</p>
+
+        <form id="formComentario">
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario"
+                placeholder="Ejemplo: El principito me gustó porque deja una enseñanza sobre la amistad"></textarea>
+            <button type="submit">Agregar comentario</button>
+        </form>
+
+        <h2>Comentarios publicados</h2>
+        <div id="listaComentarios" class="lista-comentarios">
+            <p class="sin-comentarios">Todavía no hay comentarios.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
