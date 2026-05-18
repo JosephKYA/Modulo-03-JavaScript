@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background: #111016;
+  color: #f3f3f3;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  text-align: center;
+  color: #7f7b8d;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.caja-contrasena,
+.caja-opciones {
+  background: #24232b;
+}
+
+.caja-contrasena {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  margin-bottom: 10px;
+}
+
+.caja-contrasena input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.boton-copiar {
+  border: none;
+  background: transparent;
+  color: #a4ffaf;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.boton-copiar:hover,
+.boton-copiar:focus {
+  color: #ffffff;
+  outline: 2px solid #a4ffaf;
+  outline-offset: 2px;
+}
+
+.mensaje-copiado {
+  min-height: 20px;
+  color: #a4ffaf;
+  font-size: 13px;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.caja-opciones {
+  padding: 22px 20px 20px;
+}
+
+.fila-longitud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.fila-longitud label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fila-longitud span {
+  color: #a4ffaf;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.rango {
+  width: 100%;
+  accent-color: #a4ffaf;
+  cursor: pointer;
+  margin-bottom: 22px;
+}
+
+.rango:focus {
+  outline: 2px solid #a4ffaf;
+  outline-offset: 6px;
+}
+
+.opcion-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.opcion-check input {
+  width: 17px;
+  height: 17px;
+  accent-color: #a4ffaf;
+  cursor: pointer;
+}
+
+.opcion-check input:focus {
+  outline: 2px solid #a4ffaf;
+  outline-offset: 3px;
+}
+
+.caja-seguridad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #18171f;
+  padding: 17px;
+  margin: 22px 0 12px;
+}
+
+.caja-seguridad > span {
+  color: #817d92;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info-seguridad {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.info-seguridad strong {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.barras {
+  display: flex;
+  gap: 5px;
+}
+
+.barra {
+  width: 8px;
+  height: 24px;
+  border: 2px solid #ffffff;
+}
+
+.barra.active {
+  background: #f8cd65;
+  border-color: #f8cd65;
+}
+
+.mensaje-error {
+  min-height: 18px;
+  color: #ff8b8b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.boton-generar {
+  width: 100%;
+  border: 2px solid #a4ffaf;
+  background: #a4ffaf;
+  color: #18171f;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.boton-generar span {
+  margin-left: 8px;
+}
+
+.boton-generar:hover,
+.boton-generar:focus {
+  background: transparent;
+  color: #a4ffaf;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 16px;
+  }
+
+  .caja-contrasena input {
+    font-size: 19px;
+  }
+
+  .info-seguridad strong {
+    font-size: 15px;
+  }
+
+  .caja-seguridad {
+    padding: 14px;
+  }
+}

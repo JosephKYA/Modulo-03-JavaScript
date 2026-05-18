@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="titulo">
+      <h1 id="titulo">Generador de Contraseñas</h1>
+
+      <div class="caja-contrasena">
+        <input id="contrasena" type="text" value="P1x15DaFX" aria-label="Contraseña generada" readonly />
+        <button id="botonCopiar" class="boton-copiar" type="button" aria-label="Copiar contraseña">
+          Copiar
+        </button>
+      </div>
+      <p id="mensajeCopiado" class="mensaje-copiado" aria-live="polite"></p>
+
+      <form id="formularioGenerador" class="caja-opciones">
+        <div class="fila-longitud">
+          <label for="longitud">Longitud de caracteres</label>
+          <span id="valorLongitud">10</span>
+        </div>
+
+        <input id="longitud" class="rango" type="range" min="9" max="20" value="10" />
+
+        <label class="opcion-check">
+          <input id="mayusculas" type="checkbox" checked />
+          <span>Incluir letra mayúsculas</span>
+        </label>
+
+        <label class="opcion-check">
+          <input id="minusculas" type="checkbox" checked />
+          <span>Incluir letra minúsculas</span>
+        </label>
+
+        <label class="opcion-check">
+          <input id="numeros" type="checkbox" checked />
+          <span>Incluir números</span>
+        </label>
+
+        <label class="opcion-check">
+          <input id="simbolos" type="checkbox" />
+          <span>Incluir símbolos</span>
+        </label>
+
+        <div class="caja-seguridad">
+          <span>Seguridad:</span>
+          <div class="info-seguridad">
+            <strong id="textoSeguridad">Media</strong>
+            <div class="barras" aria-label="Nivel de seguridad">
+              <span class="barra active"></span>
+              <span class="barra active"></span>
+              <span class="barra active"></span>
+              <span class="barra"></span>
+            </div>
+          </div>
+        </div>
+
+        <p id="mensajeError" class="mensaje-error" aria-live="polite"></p>
+
+        <button class="boton-generar" type="submit">
+          Generar <span>+</span>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="generadorDeContraseñas.js"></script>
+</body>
+
+</html>
